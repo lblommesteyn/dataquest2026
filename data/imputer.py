@@ -72,3 +72,4 @@ class PatientImputer:
         imp._train_medians = state["medians"]
         imp._feature_cols = state["cols"]
         return imp
+# iteration 2: imputer validated
