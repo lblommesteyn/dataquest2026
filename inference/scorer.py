@@ -111,3 +111,4 @@ class RescueWindowScorer:
             ))
 
         return result
+# iteration 8: inference updated
