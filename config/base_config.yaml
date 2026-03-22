@@ -1,0 +1,45 @@
+seed: 42
+prediction_horizon_hours: 6
+sequence_window_hours: 12
+sepsis_label_col: SepsisLabel
+min_patient_hours: 3
+missing_threshold: 0.80  # drop feature if missing > 80% for a patient
+
+alert_sensitivity_target: 0.80  # calibrate threshold to this sensitivity on val set
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+
+phenotype:
+  n_clusters: 8
+  latent_dim: 32
+  autoencoder_epochs: 50
+  autoencoder_lr: 0.001
+  autoencoder_batch: 512
+
+trajectory:
+  hidden_dim: 64
+  num_layers: 2
+  dropout: 0.3
+  epochs: 30
+  batch_size: 256
+  lr: 0.001
+  grad_clip: 1.0
+
+snapshot:
+  n_estimators: 500
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  early_stopping_rounds: 50
+
+fusion:
+  n_estimators: 200
+  max_depth: 4
+  learning_rate: 0.05
+  subsample: 0.8
+
+cache_processed: true

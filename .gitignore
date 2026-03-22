@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+.env
+
+data/raw/
+data/processed/
+artifacts/
+
+presentation/figures/
+presentation/tables/
+presentation/*.pptx
+presentation/summary.json
+presentation/deck_outline.md

@@ -1,0 +1,9 @@
+# Kaggle dataset: kaggle datasets download -d salikhussaini49/prediction-of-sepsis
+# Unzips to training_setA.csv and training_setB.csv in this directory
+raw_dir: data/raw
+
+processed_dir: data/processed
+
+artifacts_dir: artifacts
+models_dir: artifacts/models
+results_dir: artifacts/results
